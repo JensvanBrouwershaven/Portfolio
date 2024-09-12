@@ -1,0 +1,136 @@
+body {
+  background-color: rgb(122, 122, 122) !important;
+  max-width: 100vw !important;
+  flex-direction: column;
+}
+
+audio {
+  border: none !important;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: lightgray;
+  border: none;
+  color: lightgray;
+}
+
+audio::-webkit-media-controls-enclosure {
+  color: black !important;
+}
+
+audio::-webkit-media-controls-timeline {
+  color: black !important;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: black !important;
+}
+
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider-container {
+  filter: invert(100%) !important; /* Inverts colors for better visibility */
+}
+
+.whiteColor {
+  color: white;
+}
+
+.blackColor {
+  color: black;
+}
+
+.AlbumImage {
+  width: 10rem;
+  height: 10rem;
+}
+
+.flexboxSongDiv {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0.5rem 0;
+  background-color: lightgray !important;
+  max-width: 30vw !important;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.SongListDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20rem 0 0 0;
+}
+
+.Song {
+  flex: 1 1 calc(33.333% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+  display: flex; /* Ensure flex properties apply to its children */
+  justify-content: center; /* Center contents horizontally */
+  align-items: center; /* Center contents vertically */
+}
+
+@media (max-width: 768px) {
+  .Song {
+    flex: 1 1 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 480px) {
+  .Song {
+    flex: 1 1 100%;
+  }
+}
+.maindiv {
+  min-width: 30vw;
+}
+.NavBackgroundDiv{
+  background-color: black !important;
+  display: flex ;
+  padding-bottom: 1rem;
+  position:fixed !important;
+  width: 100vw;
+  margin: -20rem 0 0 0;
+}
+.NavBackgroundDiv h1{
+  color: rgba(255, 255, 255, 0.863);
+  font-family:"Times New Roman"  ;
+  font-weight:70;
+  font-size:4rem;
+}
+.NavImage{
+  max-width: 10rem;
+  margin: 0 0 0 1.5rem;
+}
+.text-center{
+  width: 82vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+.vinyl-center{
+  display: flex;
+  align-items: center;
+}
+  .NavLine{
+    background-color: rgba(255, 255, 255, 0.25);
+    width: 50vw;
+    height: 0.5rem;
+    margin: -1rem 0 0 0;
+    border-radius: 2rem;
+  }
+.FooterBackgroundDiv{
+  background-color: black !important;
+  display: flex ;
+  width: 100vw;
+  height: 7rem;
+  justify-content: center;
+  align-items: center;
+  margin:10rem 0 0 0;
+  position: fixed;
+}

@@ -1,0 +1,138 @@
+body {
+  background-color: rgba(83, 60, 17, 0.089);
+}
+
+.header1 {
+  display: flex; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background: linear-gradient(
+    110deg,
+    rgba(110, 80, 34, 0.9) 15%,
+    rgba(190, 133, 67, 0.8)
+  );
+  height: 6rem; /* Adding height for demonstration purposes */
+  width: 100vw;
+  margin: -0.5rem; 
+  animation-direction: reverse;
+  animation: 1.1s anim-lineUp ease-out 1, fadeIn 1s;
+}
+
+.headerlist {
+  display: flex;
+  list-style-type: none;
+  margin: 0.2rem; /* Adjust margin for spacing */
+}
+
+.headerlist li {
+  margin-right: 1rem; /* Adjust spacing between list items */
+}
+
+.headerlist li:last-child {
+  margin-right: 0; /* Remove margin from the last list item */
+}
+
+.headerlist li p {
+  margin: 0.25rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 1.3rem;
+}
+.bestsellers {
+  display: flex;
+  justify-content: center;
+  animation: anim-lineUp 0.8s, fadeIn 1.2s ease-in;
+  margin: 3rem 0 0 0;
+}
+.app {
+  display: flex;
+  justify-content: center;
+  margin: 5.5rem 0 0 0;
+  animation:  anim-lineUp2 0.8s, fadeIn 1.8s;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2.5rem 0 2.5rem;
+}
+.bookimg {
+  width: 20.3125rem;
+  height: 31.2rem;
+}
+.book-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navItems{
+  color: white;
+  font-weight: 150;
+  font-size:1.25rem;
+  text-decoration: none;
+  margin: 0 0 0 0.5rem;
+}
+
+/* .bestsellers {
+  margin-top: 20px;
+} */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 
+.search-container {
+  margin: 20px 0;
+} */
+
+.search-bar {
+  width: 49vw;
+  font-size: 2.3rem;
+  margin: -5rem 0 0 1rem;
+}
+
+.book-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.book-item {
+  text-align: center;
+  margin: 20px;
+}
+
+.book-item img {
+  width: 15vw;
+  height: 50vh;
+  object-fit: cover;
+}
+
+/* //////////////////////////////////////////////////////////////// */
+
+@keyframes anim-lineUp {
+  0% {
+    transform: translateY(-140%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes anim-lineUp2 {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
